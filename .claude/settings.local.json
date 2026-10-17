@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php -r 'json_decode\\(file_get_contents\\(\"composer.json\"\\), true, 512, JSON_THROW_ON_ERROR\\); echo \"composer.json VALID\\\\n\";')",
+      "Bash(php -r 'json_decode\\(file_get_contents\\(\"public/manifest.json\"\\), true, 512, JSON_THROW_ON_ERROR\\); echo \"manifest.json VALID\\\\n\";')",
+      "Bash(php -r 'json_decode\\(file_get_contents\\(\"composer.lock\"\\), true\\); echo \"composer.lock VALID\\\\n\";')",
+      "Bash(php -r ' *)",
+      "Bash(php artisan *)",
+      "Bash(php artisan tinker '--execute= *)"
+    ]
+  }
+}
